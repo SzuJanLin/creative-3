@@ -1,10 +1,14 @@
 <template>
   <div class="hello">
 
-
 <h1>
-  My testimony
+  {{msg}}
 </h1>
+
+
+<h2>
+  My testimony
+</h2>
 <p>This week was the first week of new testament class. I could feel the class discussion was vigorous. I've never felt this way before. Every time I only study with a small group. Especially growing up as the only member of the church in my youth, I only study with a small group of people. I was excited to learn about different views on the new testament. When we talked about Exegesis and Eisegesis I just thought of the different view of the scripture. Often, I take scriptures for granted, and I didn’t notice so much of a difference from different writer. I didn’t pay attention do the background and the history behind the scripture. From the reading and class lecture, I appreciate more of the early saints at Christ time who keep the record and spread the gospel. I also appreciate the compiler who quoted Christs word. I understand that there are many ways to understand the new testament. For example, Historiography is the study of who, when, where and to whom. Hermeneutics is the science of interpretation, especially of the scriptures. The other thing I learned from the class is that after taking several religion class at BYU. I always feel these religion classes are center on the gospel of Jesus Christ. Even though it has a lot of new information to learn. These classes always focused on the most important things, such like faith, love, repentance and enduring to the end. The biggest thing I learned from this Thursday is that we should love God and love our neighbor. I always felt having this in mind makes my life better. In the end, It is important to ponder and think about the meaning behind the scripture. It will enhance my learning experience. So I’ve made a goal to meaningfully study new testament this semester.</p>
 
   <h2>
@@ -22,11 +26,18 @@ Professor Sharp gave us the background of the New Testament in the class. Compar
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "testimony",
   props: {
     msg: String
+  },
+  methods:{
+    submit: function understandMore() {
+
+    }
   }
 };
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

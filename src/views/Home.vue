@@ -1,17 +1,31 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <testimony msg="Welcome to My testimony page"  />
+    <h1>submit your testimony here</h1>
+    <createTestimony/>
+    <p>See yours and others testimony
+    <button v-on:click="Go"> here</button>
+  </p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import testimony from "@/components/Testimony.vue";
+import createTestimony from "@/components/createTestimony.vue"
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    testimony,
+    createTestimony,
+
+  },
+
+  methods:{
+    Go:function(){
+      this.$router.push('about')
+    }
   }
 };
 </script>
